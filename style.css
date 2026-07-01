@@ -1,0 +1,563 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#eceff1;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* Left */
+
+.form-section{
+    width:40%;
+    background:#ffffff;
+    padding:30px;
+    overflow-y:auto;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+}
+
+.form-section h1{
+    margin-bottom:25px;
+    color:#1565c0;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.input-group input,
+.input-group textarea{
+
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+    height:100px;
+}
+
+/* Right */
+
+.resume{
+
+    width:60%;
+    background:white;
+    padding:50px;
+}
+
+.header{
+
+    text-align:center;
+}
+
+.header h1{
+
+    color:#0d47a1;
+    margin-bottom:10px;
+}
+
+.header h3{
+
+    color:#616161;
+}
+
+.contact{
+
+    margin-top:25px;
+}
+
+.contact p{
+
+    margin-bottom:8px;
+}
+
+.section{
+
+    margin-top:30px;
+}
+
+.section h2{
+
+    color:#1565c0;
+    margin-bottom:12px;
+    border-bottom:2px solid #1565c0;
+    padding-bottom:5px;
+}
+
+.section p{
+
+    line-height:1.7;
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.container{
+
+flex-direction:column;
+
+}
+
+.form-section,
+.resume{
+
+width:100%;
+
+}
+
+.resume{
+
+padding:25px;
+
+}
+
+}
+button{
+
+margin:10px 0;
+
+padding:10px 18px;
+
+background:#1565c0;
+
+color:white;
+
+border:none;
+
+border-radius:5px;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#0d47a1;
+
+}
+
+#profileImage{
+
+width:140px;
+
+height:140px;
+
+border-radius:50%;
+
+display:block;
+
+margin:auto;
+
+object-fit:cover;
+
+margin-bottom:20px;
+
+border:5px solid #1565c0;
+
+}
+
+.education-item,
+.experience-item{
+
+display:flex;
+
+flex-direction:column;
+
+gap:10px;
+
+margin-bottom:20px;
+
+}
+
+#resumeSkills{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+list-style:none;
+
+padding:0;
+
+}
+
+#resumeSkills li{
+
+background:#1565c0;
+
+color:white;
+
+padding:8px 14px;
+
+border-radius:30px;
+
+}
+.dark{
+    background:#121212;
+}
+
+.dark .form-section{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark .resume{
+    background:#2b2b2b;
+    color:white;
+}
+
+.dark input,
+.dark textarea{
+    background:#333;
+    color:white;
+    border:1px solid #666;
+}
+
+.dark button{
+    background:#444;
+}
+
+.dark .section h2{
+    color:#4fc3f7;
+    border-color:#4fc3f7;
+}
+input,
+textarea{
+
+transition:.3s;
+
+}
+
+input:focus,
+textarea:focus{
+
+outline:none;
+
+border-color:#1565c0;
+
+box-shadow:0 0 8px rgba(21,101,192,.4);
+
+}
+
+button{
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:translateY(-2px);
+
+}
+
+.resume{
+
+transition:.5s;
+
+}
+/* ===========================
+   MODERN UI UPGRADE
+===========================*/
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#edf2f7;
+}
+
+.container{
+
+    gap:35px;
+    padding:30px;
+
+}
+
+.form-section{
+
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.resume{
+
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+input,
+textarea{
+
+transition:.3s;
+
+}
+
+input:focus,
+textarea:focus{
+
+border-color:#1565c0;
+box-shadow:0 0 15px rgba(21,101,192,.25);
+
+}
+
+button{
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:translateY(-3px);
+
+}
+
+.section{
+
+padding-bottom:20px;
+
+}
+
+.section h2{
+
+margin-bottom:15px;
+
+}
+
+.header{
+
+margin-bottom:30px;
+
+}
+
+.contact{
+
+line-height:1.8;
+
+}
+/* =====================================
+   PROFESSIONAL RESUME DESIGN
+=====================================*/
+
+.resume{
+
+    max-width:850px;
+    margin:auto;
+
+}
+
+#resumeEducation div,
+#resumeExperience div{
+
+    background:#f8f9fa;
+    padding:15px;
+    border-left:5px solid #1565c0;
+    margin-bottom:15px;
+    border-radius:10px;
+    transition:.3s;
+
+}
+
+#resumeEducation div:hover,
+#resumeExperience div:hover{
+
+    transform:translateX(8px);
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+#resumeSkills{
+
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:15px;
+padding:0;
+
+}
+
+#resumeSkills li{
+
+list-style:none;
+background:#1565c0;
+color:white;
+padding:10px 18px;
+border-radius:30px;
+font-size:14px;
+font-weight:600;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.3s;
+
+}
+
+#resumeSkills li:hover{
+
+transform:scale(1.08);
+
+}
+
+.deleteSkill{
+
+margin-left:10px;
+background:red;
+width:22px;
+height:22px;
+padding:0;
+border-radius:50%;
+font-size:12px;
+
+}
+
+.education-item,
+.experience-item{
+
+background:#fafafa;
+padding:15px;
+border-radius:12px;
+margin-bottom:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.education-item input,
+.experience-item input{
+
+margin-bottom:10px;
+
+}
+
+.removeEducation,
+.removeExperience{
+
+background:#d32f2f;
+
+}
+
+.removeEducation:hover,
+.removeExperience:hover{
+
+background:#b71c1c;
+
+}
+
+.section{
+
+margin-top:35px;
+
+}
+
+.section p{
+
+line-height:1.8;
+
+}
+
+.header h1{
+
+font-size:38px;
+
+}
+
+.header h3{
+
+font-size:20px;
+font-weight:500;
+color:#555;
+
+}
+/*==========================
+PROJECTS
+==========================*/
+
+.project-item{
+
+background:#fafafa;
+padding:15px;
+border-radius:12px;
+margin-bottom:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.project-item textarea{
+
+height:80px;
+
+}
+
+#resumeProjects div{
+
+background:#f8f9fa;
+padding:15px;
+border-left:5px solid #1565c0;
+margin-bottom:15px;
+border-radius:10px;
+transition:.3s;
+
+}
+
+#resumeProjects div:hover{
+
+transform:translateX(8px);
+
+}
+/*==============================
+CERTIFICATES
+==============================*/
+
+.certificate-item{
+
+background:#fafafa;
+padding:15px;
+border-radius:12px;
+margin-bottom:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+#resumeCertificates div{
+
+padding:15px;
+margin-bottom:15px;
+border-left:5px solid #43a047;
+background:#f7fff7;
+border-radius:10px;
+
+}
+
+#resumeCertificates strong{
+
+font-size:17px;
+
+}
+
+#r-github,
+#r-linkedin{
+
+word-break:break-word;
+color:#1565c0;
+font-weight:bold;
+
+}
