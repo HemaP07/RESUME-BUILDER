@@ -1,8 +1,4 @@
-// ==========================================
-// RESUME BUILDER - PART 1
-// ==========================================
 
-// ---------- Basic Fields ----------
 const fields = ["name", "title", "email", "phone", "address", "about"];
 
 fields.forEach(field => {
@@ -20,7 +16,7 @@ fields.forEach(field => {
 
 });
 
-// ---------- Profile Photo ----------
+
 const photoInput = document.getElementById("photo");
 
 if (photoInput) {
@@ -47,9 +43,7 @@ if (photoInput) {
 
 }
 
-// ==========================================
-// EDUCATION
-// ==========================================
+
 
 const eduContainer = document.getElementById("education-container");
 const resumeEducation = document.getElementById("resumeEducation");
@@ -138,9 +132,7 @@ document.querySelectorAll(".education-item input").forEach(input => {
 
 });
 
-// ==========================================
-// EXPERIENCE
-// ==========================================
+
 
 const expContainer = document.getElementById("experience-container");
 const resumeExperience = document.getElementById("resumeExperience");
@@ -228,9 +220,6 @@ document.querySelectorAll(".experience-item input").forEach(input => {
     input.addEventListener("input", updateExperience);
 
 });
-// ==========================================
-// SKILLS
-// ==========================================
 
 const skillInput = document.getElementById("skillInput");
 const addSkillBtn = document.getElementById("addSkill");
@@ -271,9 +260,7 @@ function addSkill(skill) {
 
 }
 
-// ==========================================
-// LOCAL STORAGE
-// ==========================================
+
 
 function saveData() {
 
@@ -345,9 +332,7 @@ function saveData() {
 
 }
 
-// ==========================================
-// LOAD DATA
-// ==========================================
+
 
 function loadData() {
 
@@ -371,7 +356,7 @@ function loadData() {
     document.getElementById("r-address").textContent = data.address || "";
     document.getElementById("r-about").textContent = data.about || "";
 
-    // Profile Photo
+    
 
     if (data.photo) {
 
@@ -379,7 +364,7 @@ function loadData() {
 
     }
 
-    // Education
+    
 
     if (data.education) {
 
@@ -401,7 +386,7 @@ function loadData() {
 
     }
 
-    // Experience
+    
 
     if (data.experience) {
 
@@ -423,7 +408,7 @@ function loadData() {
 
     }
 
-    // Skills
+    
 
     if (data.skills) {
 
@@ -438,9 +423,7 @@ function loadData() {
     }
 
 }
-// ==========================================
-// DARK MODE
-// ==========================================
+
 
 const darkBtn = document.getElementById("darkMode");
 
@@ -465,9 +448,7 @@ if (darkBtn) {
 
 }
 
-// ==========================================
-// DOWNLOAD PDF
-// ==========================================
+
 
 document.getElementById("downloadPDF").addEventListener("click", async () => {
 
@@ -512,21 +493,15 @@ document.getElementById("downloadPDF").addEventListener("click", async () => {
 
 });
 
-// ==========================================
-// INITIALIZE
-// ==========================================
 
-// Load saved data
+
+
 loadData();
 
-// Update preview after loading
+
 updateEducation();
 updateExperience();
 
-// ==========================================
-// OPTIONAL:
-// Press Enter in Skills box to add skill
-// ==========================================
 
 if (skillInput) {
 
@@ -544,9 +519,7 @@ if (skillInput) {
 
 }
 
-// ==========================================
-// DEFAULT PREVIEW VALUES
-// ==========================================
+
 
 document.getElementById("r-name").textContent =
     document.getElementById("name").value || "Your Name";
@@ -565,9 +538,7 @@ document.getElementById("r-address").textContent =
 
 document.getElementById("r-about").textContent =
     document.getElementById("about").value || "Tell recruiters about yourself...";
-// ===================================
-// PROJECTS
-// ===================================
+
 
 const projectContainer = document.getElementById("project-container");
 const resumeProjects = document.getElementById("resumeProjects");
@@ -662,9 +633,7 @@ document.querySelectorAll(".project-item input,.project-item textarea").forEach(
     input.addEventListener("input",updateProjects);
 
 });
-// ====================================
-// CERTIFICATES
-// ====================================
+
 
 const certificateContainer =
 document.getElementById("certificate-container");
@@ -764,9 +733,7 @@ input.addEventListener("input",updateCertificates);
 
 });
 
-// ====================================
-// SOCIAL LINKS
-// ====================================
+
 
 document.getElementById("github").addEventListener("input",function(){
 
