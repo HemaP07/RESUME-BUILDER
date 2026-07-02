@@ -14,7 +14,7 @@ body{
     min-height:100vh;
 }
 
-/* Left */
+
 
 .form-section{
     width:40%;
@@ -54,7 +54,7 @@ textarea{
     height:100px;
 }
 
-/* Right */
+
 
 .resume{
 
@@ -107,7 +107,7 @@ textarea{
     line-height:1.7;
 }
 
-/* Mobile */
+
 
 @media(max-width:900px){
 
@@ -277,9 +277,7 @@ transform:translateY(-2px);
 transition:.5s;
 
 }
-/* ===========================
-   MODERN UI UPGRADE
-===========================*/
+
 
 body{
     font-family:'Segoe UI',sans-serif;
@@ -357,9 +355,7 @@ margin-bottom:30px;
 line-height:1.8;
 
 }
-/* =====================================
-   PROFESSIONAL RESUME DESIGN
-=====================================*/
+
 
 .resume{
 
@@ -487,9 +483,7 @@ font-weight:500;
 color:#555;
 
 }
-/*==========================
-PROJECTS
-==========================*/
+
 
 .project-item{
 
@@ -523,9 +517,7 @@ transition:.3s;
 transform:translateX(8px);
 
 }
-/*==============================
-CERTIFICATES
-==============================*/
+
 
 .certificate-item{
 
